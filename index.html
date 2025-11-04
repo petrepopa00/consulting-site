@@ -101,10 +101,10 @@
     <footer>
       © <span id="y"></span> PPTECH • Built on Vercel
     </footer>
-  <section class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
-  <div class="p-6 bg-gray-900/40 rounded-xl border border-gray-800">
-    <h2 class="text-xl font-semibold mb-3">Services</h2>
-    <ul class="space-y-2 text-gray-300 text-sm">
+  <section class="grid">
+  <div class="card">
+    <h3>Services</h3>
+    <ul class="list">
       <li>CI/CD pipelines & deployment automation</li>
       <li>DevOps workflows & internal tooling</li>
       <li>Legacy systems modernization & DB automation</li>
@@ -112,45 +112,45 @@
       <li>Oracle PL/SQL integration & automation support</li>
     </ul>
   </div>
-
-  <div class="p-6 bg-gray-900/40 rounded-xl border border-gray-800">
-    <h2 class="text-xl font-semibold mb-3">Who I work with</h2>
-    <ul class="space-y-2 text-gray-300 text-sm">
+  <div class="card">
+    <h3>Who I work with</h3>
+    <ul class="list">
       <li>SaaS & cloud teams scaling engineering delivery</li>
       <li>Telecom & enterprise engineering teams</li>
       <li>Companies modernizing legacy systems</li>
       <li>CTOs & product leaders needing delivery clarity</li>
     </ul>
   </div>
-
-  <div class="p-6 bg-gray-900/40 rounded-xl border border-gray-800">
-    <h2 class="text-xl font-semibold mb-3">Engagement Models</h2>
-    <ul class="space-y-2 text-gray-300 text-sm">
+  <div class="card">
+    <h3>Engagement models</h3>
+    <ul class="list">
       <li>Hourly advisory</li>
       <li>Monthly consulting retainer</li>
-      <li>Fixed-scope implementation packages</li>
+      <li>Fixed‑scope implementation packages</li>
     </ul>
   </div>
 </section>
 
-<section class="mb-16 p-6 bg-gray-900/40 rounded-xl border border-gray-800">
-  <h2 class="text-xl font-semibold mb-4">About</h2>
-  <p class="text-gray-300 text-sm leading-relaxed">
-    Technical Product Owner & DevOps engineer with enterprise experience improving delivery workflows, automating CI/CD, and aligning engineering with business goals. Previously delivered at Vodafone, Bosch, Ericsson, and Huawei.
-  </p>
-</section>
-
-<section class="mb-16 p-6 bg-gray-900/40 rounded-xl border border-gray-800">
-  <h2 class="text-xl font-semibold mb-4">Get in Touch</h2>
-  <form class="space-y-4" action="https://formspree.io/f/mwkgnpnz" method="POST">
-    <input class="w-full p-3 rounded-lg bg-gray-800 border border-gray-700 text-sm text-gray-200" name="name" placeholder="Your name" required>
-    <input class="w-full p-3 rounded-lg bg-gray-800 border border-gray-700 text-sm text-gray-200" name="email" placeholder="Your email" required>
-    <input class="w-full p-3 rounded-lg bg-gray-800 border border-gray-700 text-sm text-gray-200" name="company" placeholder="Company (optional)">
-    <textarea class="w-full p-3 rounded-lg bg-gray-800 border border-gray-700 text-sm text-gray-200" name="message" placeholder="What challenge are you trying to solve?" required></textarea>
-    <button class="px-5 py-3 bg-blue-600 hover:bg-blue-500 text-sm rounded-lg font-medium" type="submit">Send</button>
-  </form>
-
-  <p class="text-xs text-gray-500 mt-3">NDA by default. GDPR compliant. Secure communication.</p>
+<section class="grid" style="grid-template-columns:repeat(2,minmax(0,1fr));">
+  <div class="card">
+    <h3>About</h3>
+    <p class="small">Technical Product Owner & DevOps engineer with enterprise experience improving delivery workflows, automating CI/CD, and aligning engineering with business goals. Previously delivered at Vodafone, Bosch, Ericsson, and Huawei.</p>
+  </div>
+  <div class="card">
+    <h3>Get in touch</h3>
+    <form action="https://formspree.io/f/mwkgnpnz" method="POST">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:8px;">
+        <input name="name" placeholder="Your name" required style="padding:10px;border-radius:10px;border:1px solid var(--border);background:#0c1116;color:var(--text);">
+        <input name="email" placeholder="Your email" required style="padding:10px;border-radius:10px;border:1px solid var(--border);background:#0c1116;color:var(--text);">
+      </div>
+      <input name="company" placeholder="Company (optional)" style="margin-top:10px;width:100%;padding:10px;border-radius:10px;border:1px solid var(--border);background:#0c1116;color:var(--text);">
+      <textarea name="message" placeholder="What challenge are you trying to solve?" required style="margin-top:10px;width:100%;min-height:96px;padding:10px;border-radius:10px;border:1px solid var(--border);background:#0c1116;color:var(--text);"></textarea>
+      <div style="margin-top:12px;display:flex;gap:8px;align-items:center;">
+        <button class="btn btn-primary" type="submit">Send</button>
+        <span class="small">NDA by default • GDPR compliant • Secure comms</span>
+      </div>
+    </form>
+  </div>
 </section>
 
 </main>
