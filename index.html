@@ -125,18 +125,30 @@
   <a class="btn btn-primary" href="mailto:petrepopa00@gmail.com?subject=Consulting%20inquiry%20from%20pptech.dev">Email me</a>
   <a class="btn btn-ghost" href="https://www.linkedin.com/in/popa-petre-540666142" target="_blank" rel="noopener">Connect on LinkedIn</a>
 </div>
-<form action="https://formspree.io/f/mwkgnpnz" method="POST">
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:8px;">
-        <input name="name" placeholder="Your name" required style="padding:10px;border-radius:10px;border:1px solid var(--border);background:#0c1116;color:var(--text);">
-        <input name="email" placeholder="Your email" required style="padding:10px;border-radius:10px;border:1px solid var(--border);background:#0c1116;color:var(--text);">
-      </div>
-      <input name="company" placeholder="Company (optional)" style="margin-top:10px;width:100%;padding:10px;border-radius:10px;border:1px solid var(--border);background:#0c1116;color:var(--text);">
-      <textarea name="message" placeholder="What challenge are you trying to solve?" required style="margin-top:10px;width:100%;min-height:96px;padding:10px;border-radius:10px;border:1px solid var(--border);background:#0c1116;color:var(--text);"></textarea>
-      <div style="margin-top:12px;display:flex;gap:8px;align-items:center;">
-        <button class="btn btn-primary" type="submit">Send</button>
-        <span class="small">NDA by default • GDPR compliant • Secure comms</span>
-      </div>
-    </form>
+<form action="https://formspree.io/f/mrbownqa" method="POST">
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:8px;">
+    <input name="name" placeholder="Your name" required
+           style="padding:10px;border-radius:10px;border:1px solid var(--border);background:#0c1116;color:var(--text);">
+    <input type="email" name="email" placeholder="Your email" required
+           style="padding:10px;border-radius:10px;border:1px solid var(--border);background:#0c1116;color:var(--text);">
+  </div>
+
+  <input name="company" placeholder="Company (optional)"
+         style="margin-top:10px;width:100%;padding:10px;border-radius:10px;border:1px solid var(--border);background:#0c1116;color:var(--text);">
+
+  <textarea name="message" placeholder="What challenge are you trying to solve?" required
+            style="margin-top:10px;width:100%;min-height:96px;padding:10px;border-radius:10px;border:1px solid var(--border);background:#0c1116;color:var(--text);"></textarea>
+
+  <!-- opțional: subiect personalizat + honeypot anti-spam -->
+  <input type="hidden" name="_subject" value="New consulting inquiry from pptech.dev">
+  <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+
+  <div style="margin-top:12px;display:flex;gap:8px;align-items:center;">
+    <button class="btn btn-primary" type="submit">Send</button>
+    <span class="small">NDA by default • GDPR compliant • Secure comms</span>
+  </div>
+</form>
+
   </div>
 </section>
 
