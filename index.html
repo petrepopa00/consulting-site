@@ -126,6 +126,7 @@
   <a class="btn btn-ghost" href="https://www.linkedin.com/in/popa-petre-540666142" target="_blank" rel="noopener">Connect on LinkedIn</a>
 </div>
 <form action="https://formspree.io/f/mrbownqa" method="POST">
+  <input type="hidden" name="_redirect" value="https://pptech.dev/?sent=1">
   <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:8px;">
     <input name="name" placeholder="Your name" required
            style="padding:10px;border-radius:10px;border:1px solid var(--border);background:#0c1116;color:var(--text);">
@@ -153,6 +154,9 @@
 </section>
 
 </main>
-  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+  <script>const params = new URLSearchParams(window.location.search);
+if (params.get("sent") === "1") {
+alert("Thanks — message received! I'll reply soon ✅");
+}</script>
 </body>
 </html>
